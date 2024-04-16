@@ -148,4 +148,4 @@ In addition, by adding depth increase, batch normalization, and dropout function
 To compensate for the slow speed, the LeNet5moon2 model was implemented by increasing the number of filters and feature maps, adjusting the network size, and applying batch normalization to LeNet5moon. As a result of the execution, the accuracy of the test data improved to 0.9807 for the first epoch and 0.9922 for the 10th epoch.
 
 ### Future works
-When evaluating the performance of existing and new models, it would be good to not only compare loss and accuracy, but also compare execution time and memory usage under the same conditions, and see how performance changes depending on parameter changes.
+When evaluating the performance of existing and new models, it would be good to not only compare loss and accuracy, but also compare execution time and memory usage under the same conditions, and see how performance changes depending on parameter changes. It would be nice to draw the structural diagram of the new model like a three-dimensional effect of LeCun et al. (1998).
