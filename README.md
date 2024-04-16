@@ -7,7 +7,7 @@ In this report, I will describe the process of training LeNet-5 and a custom MLP
 I implemented a custom MNIST dataset class in dataset.py. This class loads the MNIST images, applies necessary preprocessing (such as normalization), and provides data to the models during training and testing. The dataset contains handwritten digit images (28x28 pixels) along with their corresponding labels (0 to 9).
 data download to C:\Users\userID\MNIST2024\data from eclass of SoulTech
 
-## 2. Model Implementation
+## 2. Model Implementation: [dataset.py](https://github.com/MoonHyeJung/NN4DL/blob/main/dataset.py)
 ### LeNet-5
 LeNet-5 is a classic convolutional neural network (CNN) architecture proposed by Yann LeCun et al. It consists of two convolutional layers followed by average pooling, and then three fully connected layers. The number of model parameters in LeNet-5 can be computed as follows:
 ![poster](./leNet-5.png)
