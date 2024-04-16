@@ -75,6 +75,7 @@ Additionally, I verified that the accuracy of my LeNet-5 implementation matches 
 - Introducing Batch Normalization: LeNet5moon introduces Batch Normalization after each convolutional layer to stabilize learning and speed up convergence. This allows for more efficient learning.
 - Apply Dropout: Add Dropout between Fully Connected Layers to prevent overfitting and improve the generalization ability of the model. This helps build more stable and generalized models.
 - Architecture of LeNet5moon
+![poster](./leNet5moon.png)
 Input (1, 32, 32)
 
 | Layer          | Operation           | Output Shape |
@@ -108,6 +109,7 @@ Finally, it passes through the output layer to get the score for each class.
 - Adjusted network size: LeNet5moon2 adjusts the network size according to the size of the input image to provide a more suitable model. This allows it to provide better generalization performance for different sizes and types of input images.
 - Apply Batch Normalization: LeNet5moon2 also introduces Batch Normalization after each convolutional layer to stabilize learning and increase convergence speed. This allows for faster and more stable learning.
 - Architecture of LeNet5moon2
+![poster](./leNet5moon2.png)
 Input (1, 32, 32)
 
 | Layer          | Operation           | Output Shape |
