@@ -2,7 +2,7 @@
 In this report, I will describe the process of training LeNet-5 and a custom MLP (Multi-Layer Perceptron) on the MNIST dataset. The goal is to compare their predictive performances and explore regularization techniques to improve the LeNet-5 model.
 
 ### Class: Artificial Neural Network and Deep Learning
-### Professor: HWANG, SANGHEUM
+### Professor: [HWANG, SANGHEUM](https://iise.seoultech.ac.kr/about_the_department/about_professor/?togo=list&menu=1215&profidx=02533)
 ### Student: HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
 
 ## 1. Dataset Preparation: [dataset.py](https://github.com/MoonHyeJung/NN4DL/blob/main/dataset.py)
