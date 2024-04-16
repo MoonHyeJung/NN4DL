@@ -1,4 +1,4 @@
-# HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
+# Author: HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
 # Training LeNet-5 and Custom MLP on MNIST Dataset
 In this report, I will describe the process of training LeNet-5 and a custom MLP (Multi-Layer Perceptron) on the MNIST dataset. The goal is to compare their predictive performances and explore regularization techniques to improve the LeNet-5 model.
 
