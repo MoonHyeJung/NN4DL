@@ -6,6 +6,7 @@ In this report, I will describe the process of training LeNet-5 and a custom MLP
 ## 1. Dataset Preparation: [dataset.py](https://github.com/MoonHyeJung/NN4DL/blob/main/dataset.py)
 I implemented a custom MNIST dataset class in dataset.py. This class loads the MNIST images, applies necessary preprocessing (such as normalization), and provides data to the models during training and testing. The dataset contains handwritten digit images (28x28 pixels) along with their corresponding labels (0 to 9).
 data download to C:\Users\userID\MNIST2024\data from eclass of SoulTech
+![poster](./mnist_train.png)
 
 ## 2. Model Implementation: [model.py](https://github.com/MoonHyeJung/NN4DL/blob/main/model.py)
 ### LeNet-5
