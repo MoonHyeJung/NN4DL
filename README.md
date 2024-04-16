@@ -75,7 +75,8 @@ I development at least two regularization techniques to improve the LeNet-5 mode
 - Weight Decay (L2 Regularization): Added weight decay to the optimizer.
 - Performance has been improved, but speed has been lower.
 - Architecture of LeNet5moon
-  Input (1, 32, 32)
+Input (1, 32, 32)
+
 | Layer          | Operation           | Output Shape |
 |----------------|---------------------|--------------|
 | Conv2d         | (1, 6, 5, 5)        | (6, 28, 28)  |
