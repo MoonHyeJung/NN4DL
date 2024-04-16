@@ -69,7 +69,7 @@ Additionally, I verified that the accuracy of my LeNet-5 implementation matches 
 ![poster](./table.png)
 - added perforemance with new model by regularization
 
-## 6. Regularization Techniques
+## 6. Regularization Techniques: [model.py](https://github.com/MoonHyeJung/NN4DL/blob/main/model.py)
 ### 6.1 LeNet5moon
 - Increased depth: LeNet5moon has a deeper network structure. The added Convolutional Layer and Fully Connected Layer allow learning more abstract features, which improves model performance.
 - Introducing Batch Normalization: LeNet5moon introduces Batch Normalization after each convolutional layer to stabilize learning and speed up convergence. This allows for more efficient learning.
