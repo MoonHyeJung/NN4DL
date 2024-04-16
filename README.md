@@ -140,6 +140,6 @@ Once again, we go through the Fully Connected Layer to the output layer and get 
 ![poster](./plot.jpg)
 
 I successfully trained LeNet5 and customMLP using the MNIST dataset, compared their performance, and displayed the results in a line graph and table.
-As a result of running LeNet5 for 10 epochs, the performance reached more than 99% of the existing research.
+As a result of running LeNet5 for 10 epochs, the performance reached more than 99% of the existing research(LeCun et al., 1998).
 In addition, by adding depth increase, batch normalization, and dropout functions to the LeNet5 algorithm to create the LeNet5moon model, the accuracy of the test data was increased by 0.0017 from 0.9889 to 0.9906, but the execution time still took a long time.
 To compensate for the slow speed, the LeNet5moon2 model was implemented by increasing the number of filters and feature maps, adjusting the network size, and applying batch normalization to LeNet5moon. As a result of the execution, the accuracy of the test data improved to 0.9807 for the first epoch and 0.9922 for the 10th epoch.
