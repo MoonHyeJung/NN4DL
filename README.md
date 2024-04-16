@@ -74,11 +74,6 @@ Additionally, I verified that the accuracy of my LeNet-5 implementation matches 
 - Increased depth: LeNet5moon has a deeper network structure. The added Convolutional Layer and Fully Connected Layer allow learning more abstract features, which improves model performance.
 - Introducing Batch Normalization: LeNet5moon introduces Batch Normalization after each convolutional layer to stabilize learning and speed up convergence. This allows for more efficient learning.
 - Apply Dropout: Add Dropout between Fully Connected Layers to prevent overfitting and improve the generalization ability of the model. This helps build more stable and generalized models.
-
-### 6.2 LeNet5moon2
-- Increased number of filters and feature maps: LeNet5moon2 can extract more features by using more filters in each convolutional layer. This allows for learning more diverse features and more accurate classification.
-- Adjusted network size: LeNet5moon2 adjusts the network size according to the size of the input image to provide a more suitable model. This allows it to provide better generalization performance for different sizes and types of input images.
-- Apply Batch Normalization: LeNet5moon2 also introduces Batch Normalization after each convolutional layer to stabilize learning and increase convergence speed. This allows for faster and more stable learning.
 - Architecture of LeNet5moon
 Input (1, 32, 32)
 
@@ -99,8 +94,19 @@ Input (1, 32, 32)
 | Dropout        | (p=0.5)             |              |
 | Linear         | (84, 10)            | (10,)        |
 
-I development LeNet5moon2 using LeNet5moon.
-- Performance and speed have been improved.
+When an input image comes in, it first passes through the Convolutional Layer. Afterwards, it goes through Batch Normalization and ReLU activation functions.
+Next, we reduce the size of the image through the MaxPooling layer.
+It goes through the convolutional layer again, and similarly applies Batch Normalization and ReLU.
+Again reduce the image size through MaxPooling layer.
+It is then expanded into a fully connected layer and the ReLU activation function is applied.
+Afterwards, it goes through Dropout and passes through the Fully Connected Layer once again.
+Finally, it passes through the output layer to get the score for each class.
+
+
+### 6.2 LeNet5moon2
+- Increased number of filters and feature maps: LeNet5moon2 can extract more features by using more filters in each convolutional layer. This allows for learning more diverse features and more accurate classification.
+- Adjusted network size: LeNet5moon2 adjusts the network size according to the size of the input image to provide a more suitable model. This allows it to provide better generalization performance for different sizes and types of input images.
+- Apply Batch Normalization: LeNet5moon2 also introduces Batch Normalization after each convolutional layer to stabilize learning and increase convergence speed. This allows for faster and more stable learning.
 - Architecture of LeNet5moon2
 Input (1, 32, 32)
 
@@ -120,6 +126,12 @@ Input (1, 32, 32)
 | Linear         | (120, 84)           | (84,)        |
 | Dropout        | (p=0.5)             |              |
 | Linear         | (84, 10)            | (10,)        |
+
+When an input image comes in, it goes through a similar process as LeNet5moon.
+After passing the convolutional layer, batch normalization, and ReLU, MaxPooling is applied to reduce the image.
+Once again, we go through the Convolutional Layer, Batch Normalization, and ReLU and apply MaxPooling.
+Expand to Fully Connected Layer and apply Dropout.
+Once again, we go through the Fully Connected Layer to the output layer and get the scores for each class.
 
 Conclusion
 ![poster](./plot.jpg)
