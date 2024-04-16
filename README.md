@@ -1,7 +1,7 @@
 # Training LeNet-5 and Custom MLP on MNIST Dataset
 In this report, I will describe the process of training LeNet-5 and a custom MLP (Multi-Layer Perceptron) on the MNIST dataset. The goal is to compare their predictive performances and explore regularization techniques to improve the LeNet-5 model.
 
-## Author: HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
+### Author: HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
 
 ## 1. Dataset Preparation: [dataset.py](https://github.com/MoonHyeJung/NN4DL/blob/main/dataset.py)
 I implemented a custom MNIST dataset class in dataset.py. This class loads the MNIST images, applies necessary preprocessing (such as normalization), and provides data to the models during training and testing. The dataset contains handwritten digit images (28x28 pixels) along with their corresponding labels (0 to 9).
@@ -135,7 +135,7 @@ Once again, we go through the Convolutional Layer, Batch Normalization, and ReLU
 Expand to Fully Connected Layer and apply Dropout.
 Once again, we go through the Fully Connected Layer to the output layer and get the scores for each class.
 
-Conclusion
+## Conclusion
 ![poster](./plot.jpg)
 
 We successfully trained LeNet5 and customMLP using the MNIST dataset, compared their performance, and displayed the results in a line graph and table.
