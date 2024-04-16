@@ -1,3 +1,4 @@
+# HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
 # Training LeNet-5 and Custom MLP on MNIST Dataset
 In this report, I will describe the process of training LeNet-5 and a custom MLP (Multi-Layer Perceptron) on the MNIST dataset. The goal is to compare their predictive performances and explore regularization techniques to improve the LeNet-5 model.
 
@@ -7,7 +8,7 @@ I implemented a custom MNIST dataset class in dataset.py. This class loads the M
 ## 2. Model Implementation
 ### LeNet-5
 LeNet-5 is a classic convolutional neural network (CNN) architecture proposed by Yann LeCun et al. It consists of two convolutional layers followed by average pooling, and then three fully connected layers. The number of model parameters in LeNet-5 can be computed as follows:
-
+![poster](./leNet-5.png)
 #### First Convolutional Layer:
 - Input: 1 channel (grayscale image)
 - Output: 6 feature maps
@@ -54,18 +55,24 @@ I used the test dataset as a validation dataset during training.
 
 ## 4. Results
 I plotted the following statistics for both models:
-- Training loss and accuracy curves
-- Test loss and accuracy curves
+- Training loss and accuracy curves for each modes
+- Test loss and accuracy curves for each modes
+![poster](./plot0.jpg)
+
 ## 5. Performance Comparison
 I compared the predictive performances of LeNet-5 and the custom MLP.
 Additionally, I verified that the accuracy of my LeNet-5 implementation matches the known accuracy reported in the literature.
+![poster](./table.png)
+- added perforemance with new model by regularization
 
 ## 6. Regularization Techniques
 I employed at least two regularization techniques to improve the LeNet-5 model:
 
 - Dropout: Applied dropout layers to prevent overfitting.
 - Weight Decay (L2 Regularization): Added weight decay to the optimizer.
+
 Conclusion
+![poster](./plot.jpg)
 
 In summary, I successfully trained LeNet-5 and the custom MLP on the MNIST dataset, compared their performances, and explored regularization techniques.
 The results are presented in the accompanying code and plots. 
