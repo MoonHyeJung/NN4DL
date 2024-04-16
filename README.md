@@ -70,10 +70,15 @@ Additionally, I verified that the accuracy of my LeNet-5 implementation matches 
 - added perforemance with new model by regularization
 
 ## 6. Regularization Techniques
-I development at least two regularization techniques to improve the LeNet-5 model to LeNet5moon
-- Dropout: Applied dropout layers to prevent overfitting.
-- Weight Decay (L2 Regularization): Added weight decay to the optimizer.
-- Performance has been improved, but speed has been lower.
+### 6.1 LeNet5moon
+- Increased depth: LeNet5moon has a deeper network structure. The added Convolutional Layer and Fully Connected Layer allow learning more abstract features, which improves model performance.
+- Introducing Batch Normalization: LeNet5moon introduces Batch Normalization after each convolutional layer to stabilize learning and speed up convergence. This allows for more efficient learning.
+- Apply Dropout: Add Dropout between Fully Connected Layers to prevent overfitting and improve the generalization ability of the model. This helps build more stable and generalized models.
+
+### 6.2 LeNet5moon2
+- Increased number of filters and feature maps: LeNet5moon2 can extract more features by using more filters in each convolutional layer. This allows for learning more diverse features and more accurate classification.
+- Adjusted network size: LeNet5moon2 adjusts the network size according to the size of the input image to provide a more suitable model. This allows it to provide better generalization performance for different sizes and types of input images.
+- Apply Batch Normalization: LeNet5moon2 also introduces Batch Normalization after each convolutional layer to stabilize learning and increase convergence speed. This allows for faster and more stable learning.
 - Architecture of LeNet5moon
 Input (1, 32, 32)
 
