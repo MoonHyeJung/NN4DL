@@ -9,6 +9,8 @@ I implemented a custom MNIST dataset class in dataset.py. This class loads the M
 ### LeNet-5
 LeNet-5 is a classic convolutional neural network (CNN) architecture proposed by Yann LeCun et al. It consists of two convolutional layers followed by average pooling, and then three fully connected layers. The number of model parameters in LeNet-5 can be computed as follows:
 ![poster](./leNet-5.png)
+reference: LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278-2324.
+
 #### First Convolutional Layer:
 - Input: 1 channel (grayscale image)
 - Output: 6 feature maps
