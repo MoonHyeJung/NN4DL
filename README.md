@@ -3,11 +3,11 @@ In this report, I will describe the process of training LeNet-5 and a custom MLP
 
 ## Author: HyeJung Moon, hyejung.moon@gmail.com, 23620026, 2024.04.16
 
-## 1. Dataset Preparation
+## 1. Dataset Preparation: [dataset.py](https://github.com/MoonHyeJung/NN4DL/blob/main/dataset.py)
 I implemented a custom MNIST dataset class in dataset.py. This class loads the MNIST images, applies necessary preprocessing (such as normalization), and provides data to the models during training and testing. The dataset contains handwritten digit images (28x28 pixels) along with their corresponding labels (0 to 9).
 data download to C:\Users\userID\MNIST2024\data from eclass of SoulTech
 
-## 2. Model Implementation: [dataset.py](https://github.com/MoonHyeJung/NN4DL/blob/main/dataset.py)
+## 2. Model Implementation: [model.py](https://github.com/MoonHyeJung/NN4DL/blob/main/model.py)
 ### LeNet-5
 LeNet-5 is a classic convolutional neural network (CNN) architecture proposed by Yann LeCun et al. It consists of two convolutional layers followed by average pooling, and then three fully connected layers. The number of model parameters in LeNet-5 can be computed as follows:
 ![poster](./leNet-5.png)
@@ -52,7 +52,7 @@ I implemented a custom MLP with a similar number of parameters as LeNet-5. The a
 
 Total parameters in Custom MLP: 123,412
 
-## 3. Training Process
+## 3. Training Process: [main.py](https://github.com/MoonHyeJung/NN4DL/blob/main/main.py)
 I wrote main.py to train both models.
 The training process includes monitoring average loss values and accuracy at the end of each epoch.
 I used the test dataset as a validation dataset during training.
