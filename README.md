@@ -74,9 +74,46 @@ I development at least two regularization techniques to improve the LeNet-5 mode
 - Dropout: Applied dropout layers to prevent overfitting.
 - Weight Decay (L2 Regularization): Added weight decay to the optimizer.
 - Performance has been improved, but speed has been lower.
+- Architecture of LeNet5moon
+  Input (1, 32, 32)
+| Layer          | Operation           | Output Shape |
+|----------------|---------------------|--------------|
+| Conv2d         | (1, 6, 5, 5)        | (6, 28, 28)  |
+| BatchNorm2d    |                     |              |
+| ReLU           |                     |              |
+| MaxPool2d      | (2, 2)              | (6, 14, 14)  |
+| Conv2d         | (6, 16, 5, 5)       | (16, 10, 10) |
+| BatchNorm2d    |                     |              |
+| ReLU           |                     |              |
+| MaxPool2d      | (2, 2)              | (16, 5, 5)   |
+| Flatten        |                     | (400,)       |
+| Linear         | (400, 120)          | (120,)       |
+| Dropout        | (p=0.5)             |              |
+| Linear         | (120, 84)           | (84,)        |
+| Dropout        | (p=0.5)             |              |
+| Linear         | (84, 10)            | (10,)        |
 
 I development LeNet5moon2 using LeNet5moon.
 - Performance and speed have been improved.
+- Architecture of LeNet5moon2
+Input (1, 32, 32)
+
+| Layer          | Operation           | Output Shape |
+|----------------|---------------------|--------------|
+| Conv2d         | (1, 10, 5, 5)       | (10, 28, 28) |
+| BatchNorm2d    |                     |              |
+| ReLU           |                     |              |
+| MaxPool2d      | (2, 2)              | (10, 14, 14) |
+| Conv2d         | (10, 32, 5, 5)      | (32, 10, 10) |
+| BatchNorm2d    |                     |              |
+| ReLU           |                     |              |
+| MaxPool2d      | (2, 2)              | (32, 5, 5)   |
+| Flatten        |                     | (800,)       |
+| Linear         | (800, 120)          | (120,)       |
+| Dropout        | (p=0.5)             |              |
+| Linear         | (120, 84)           | (84,)        |
+| Dropout        | (p=0.5)             |              |
+| Linear         | (84, 10)            | (10,)        |
 
 Conclusion
 ![poster](./plot.jpg)
