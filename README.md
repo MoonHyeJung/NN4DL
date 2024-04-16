@@ -70,10 +70,13 @@ Additionally, I verified that the accuracy of my LeNet-5 implementation matches 
 - added perforemance with new model by regularization
 
 ## 6. Regularization Techniques
-I employed at least two regularization techniques to improve the LeNet-5 model:
-
+I development at least two regularization techniques to improve the LeNet-5 model to LeNet5moon
 - Dropout: Applied dropout layers to prevent overfitting.
 - Weight Decay (L2 Regularization): Added weight decay to the optimizer.
+- Performance has been improved, but speed has been lower.
+
+I development LeNet5moon2 using LeNet5moon.
+- Performance and speed have been improved.
 
 Conclusion
 ![poster](./plot.jpg)
